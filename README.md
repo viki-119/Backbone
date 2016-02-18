@@ -11,10 +11,8 @@ backbone Learn Note: https://github.com/the5fire/backbonejs-learning-note
     <script src="http://the5fireblog.b0.upaiyun.com/staticfile/backbone.js"></script>
 
 backbone的唯一依赖库underscore:
-http://documentcloud.github.io/underscore/
 
-中文网：
-http://www.css88.com/doc/backbone-0.5.3/
+中文网：http://www.css88.com/doc/backbone-0.5.3/
 
 http://www.ibm.com/developerworks/cn/web/wa-backbonejs/#list1
 
