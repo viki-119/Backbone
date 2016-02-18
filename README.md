@@ -12,7 +12,7 @@ http://www.css88.com/doc/backbone-0.5.3/
 
 http://www.ibm.com/developerworks/cn/web/wa-backbonejs/#list1
 
-backbone是有jeremy ashkenas创建的一个轻量级MVC JavaScript库，具有以下特点：
+backbone是有jeremy ashkenas创建的一个轻量级MVC JavaScript库，具有以下特点：    
 1.强制依赖于underscore.js   2.非强制依赖于jQuery/Zepto
 
 单页面应用（single page application,简称SPA），是指在浏览器中运行的应用，它们在使用期间不会重新加载页面。
