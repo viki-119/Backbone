@@ -1,0 +1,30 @@
+    <script src="http://the5fireblog.b0.upaiyun.com/staticfile/jquery-1.10.2.js"></script>
+    <script src="http://the5fireblog.b0.upaiyun.com/staticfile/underscore.js"></script>
+    <script src="http://the5fireblog.b0.upaiyun.com/staticfile/backbone.js"></script>
+    <script>
+      $(document).ready(function(){
+
+        var Man=Backbone.Model.extend({
+            initialize:function(){
+              alert('hay you create me?');
+              this.bind("change:name",function(){
+                var name=this.get('name');
+                alert('你改变了name属性值'+name);
+              })
+            },
+            defaults:{
+              name:'张三',
+              age:'44'
+            },
+            aboutMe:function(){
+              return '我叫'+this.get('name')+','+'今年'+this.get('age');
+            }
+        })
+        var man=new Man;//当实例化一个类时就会调用initialize方法；
+
+        man.set({address:'上海市',phone:'10010'});
+        alert(man.get('address'));
+        alert(man.aboutMe());//执行一个函数
+        man.set({name:'李四'});//当name的值发生改变时触发一次事件
+
+      });
