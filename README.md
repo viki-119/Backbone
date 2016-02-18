@@ -1,8 +1,12 @@
 # backbone
 适合大型应用的开发
 
-官网：
-http://documentcloud.github.io/backbone/
+backbone Api: http://backbonejs.org/   
+backbone 源码： http://github.com/jashkenas/backbone   
+backbone ToDo:  http://backbonejs.org/examples/todos/index.html
+backbone Learn Note: https://github.com/the5fire/backbonejs-learning-note
+
+官网：http://documentcloud.github.io/backbone/
 
 backbone的唯一依赖库underscore:
 http://documentcloud.github.io/underscore/
