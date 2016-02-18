@@ -4,17 +4,15 @@
 backbone Api: http://backbonejs.org/   
 backbone 源码： http://github.com/jashkenas/backbone   
 backbone ToDo:  http://backbonejs.org/examples/todos/index.html   
-backbone Learn Note: https://github.com/the5fire/backbonejs-learning-note   
+backbone Learn Note: https://github.com/the5fire/backbonejs-learning-note 
+
+中文网：http://www.css88.com/doc/backbone-0.5.3/
 
     <script src="http://the5fireblog.b0.upaiyun.com/staticfile/jquery-1.10.2.js"></script>
     <script src="http://the5fireblog.b0.upaiyun.com/staticfile/underscore.js"></script>
     <script src="http://the5fireblog.b0.upaiyun.com/staticfile/backbone.js"></script>
 
 backbone的唯一依赖库underscore:
-
-中文网：http://www.css88.com/doc/backbone-0.5.3/
-
-http://www.ibm.com/developerworks/cn/web/wa-backbonejs/#list1
 
 backbone是有jeremy ashkenas创建的一个轻量级MVC JavaScript库，具有以下特点：    
 1.强制依赖于underscore.js   2.非强制依赖于jQuery/Zepto
