@@ -1,4 +1,4 @@
-# backbone
+# Backbone
 适合大型应用的开发
 
 backbone Api: http://backbonejs.org/   
