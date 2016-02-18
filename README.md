@@ -3,8 +3,8 @@
 
 backbone Api: http://backbonejs.org/   
 backbone 源码： http://github.com/jashkenas/backbone   
-backbone ToDo:  http://backbonejs.org/examples/todos/index.html
-backbone Learn Note: https://github.com/the5fire/backbonejs-learning-note
+backbone ToDo:  http://backbonejs.org/examples/todos/index.html   
+backbone Learn Note: https://github.com/the5fire/backbonejs-learning-note   
 
 官网：http://documentcloud.github.io/backbone/
 
