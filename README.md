@@ -25,9 +25,9 @@ backbone是有jeremy ashkenas创建的一个轻量级MVC JavaScript库，具有�
 单页面应用的缺点：
 1.SEO问题  2.浏览器历史记录问题  3.初次加载较多资源问题
 
-单页面应用的示例：
-alibaba message center：http://message.alibaba.com
-trello:http://trello.com
-usa today:http://usatoday.com
-documentCloud:http://www.documentcloud.org
+单页面应用的示例：   
+alibaba message center：http://message.alibaba.com   
+trello:http://trello.com   
+usa today:http://usatoday.com   
+documentCloud:http://www.documentcloud.org   
 
