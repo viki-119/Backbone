@@ -6,7 +6,9 @@ backbone 源码： http://github.com/jashkenas/backbone
 backbone ToDo:  http://backbonejs.org/examples/todos/index.html   
 backbone Learn Note: https://github.com/the5fire/backbonejs-learning-note   
 
-官网：http://documentcloud.github.io/backbone/
+<script src="http://the5fireblog.b0.upaiyun.com/staticfile/jquery-1.10.2.js"></script>
+<script src="http://the5fireblog.b0.upaiyun.com/staticfile/underscore.js"></script>
+<script src="http://the5fireblog.b0.upaiyun.com/staticfile/backbone.js"></script>
 
 backbone的唯一依赖库underscore:
 http://documentcloud.github.io/underscore/
