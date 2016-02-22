@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>backbone的一个简单应用</title>
+</head>
+<body>
+    <button id="check">新手报到</button>
+    <ul id="world-list"></ul>
+    <a href="http://www.the5fire.com">更多教程</a>
+
+    <script src="http://the5fireblog.b0.upaiyun.com/staticfile/jquery-1.10.2.js"></script>
+    <script src="http://the5fireblog.b0.upaiyun.com/staticfile/underscore.js"></script>
+    <script src="http://the5fireblog.b0.upaiyun.com/staticfile/backbone.js"></script>
+    <script>
+      $(document).ready(function(){
+
+        var Man=Backbone.Model.extend({
+            initialize:function(){
+              alert('hay you create me?');
+              this.bind("change:name",function(){
+                var name=this.get('name');
+                alert('你改变了name属性值'+name);
+              })
+            },
+            defaults:{
+              name:'张三',
+              age:'44'
+            },
+            aboutMe:function(){
+              return '我叫'+this.get('name')+','+'今年'+this.get('age');
+            }
+        })
+        var man=new Man;//当实例化一个类时就会调用initialize方法；
+
+        man.set({address:'上海市',phone:'10010'});
+        alert(man.get('address'));
+        alert(man.aboutMe());//执行一个函数
+        man.set({name:'李四'});//当name的值发生改变时触发一次事件
+
+      });
+
+
+
+    (function ($) {
+        var World = Backbone.Model.extend({
+            //创建一个World的对象，拥有name属性
+            name: null
+        });
+
+        var Worlds = Backbone.Collection.extend({
+            //World对象的集合
+            initialize: function (models, options) {
+                    this.bind("add", options.view.addOneWorld);
+            }
+        });
+
+        AppView = Backbone.View.extend({
+            el: $("body"),
+            initialize: function () {
+                //构造函数，实例化一个World集合类
+                //并且以字典方式传入AppView的对象
+                this.worlds = new Worlds(null, { view : this })
+            },
+            events: {
+                //事件绑定，绑定Dom中id为check的元素
+                "click #check":  "checkIn",
+            },
+            checkIn: function () {
+                var world_name = prompt("请问，您是哪星人?");
+                if(world_name == "") world_name = '未知';
+                var world = new World({ name: world_name });
+                this.worlds.add(world);
+            },
+            addOneWorld: function(model) {
+                $("#world-list").append("<li>这里是来自 <b>" + model.get('name') + "</b> 星球的问候：hello world！</li>");
+            }
+        });
+        //实例化AppView
+        var appview = new AppView;
+    })(jQuery);
+
+/*    var artist = new Backbone.Model({
+  firstName: "立华",
+  lastName: "咸"
+});
+
+artist.set({birthday: "December 13, 1979"});
+
+alert(JSON.stringify(artist));*/
+    </script>
+</body>
+</html>
